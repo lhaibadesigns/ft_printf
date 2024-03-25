@@ -1,0 +1,19 @@
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+SRC = ft_checker.c ft_printf.c ft_put_add.c ft_put_hexa_base.c ft_put_unsigned_nbr.c ft_putchar.c ft_putnbr.c ft_putstr.c
+OBJ = ${SRC:.c=.o}
+NAME = libftprintf.a
+
+all: ${NAME}
+
+${NAME}: ${OBJ}
+	ar -rcs ${NAME} ${OBJ}
+	
+clean:
+	rm -rf ${OBJ}
+
+fclean: clean
+	rm -rf ${NAME}
+
+re: fclean all	
