@@ -6,7 +6,7 @@
 #    By: ael-haib <ael-haib@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/25 03:14:03 by ael-haib          #+#    #+#              #
-#    Updated: 2024/03/25 03:14:05 by ael-haib         ###   ########.fr        #
+#    Updated: 2024/03/27 05:06:25 by ael-haib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ all: ${NAME}
 
 ${NAME}: ${OBJ}
 	ar -rcs ${NAME} ${OBJ}
-	
+
 clean:
 	rm -rf ${OBJ}
 
